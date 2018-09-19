@@ -1,7 +1,7 @@
 BIN ?= image/bin
 TARGET_ARCH ?= amd64
 
-DUMB_INIT_VERSION ?= 1.1.3
+DUMB_INIT_VERSION ?= 1.2.2
 GOSU_VERSION ?= 1.10
 
 # These are available in apt for yakkety+
@@ -22,7 +22,7 @@ DEPS += ${GOLANG_DEPS}
 ## golang
 ##
 
-GOLANG_IMAGE = golang:1.8
+GOLANG_IMAGE = golang:1.11
 GOLANG_BUILD_CMD ?= \
 	docker create -v /go/bin --name golang-build-out-$(notdir $@) busybox:latest /bin/true \
 	&& ( \
