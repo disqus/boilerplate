@@ -2,7 +2,7 @@ ARG BOILERPLATE_PARENT_IMAGE="ubuntu"
 ARG BOILERPLATE_PARENT_TAG="latest"
 FROM $BOILERPLATE_PARENT_IMAGE:$BOILERPLATE_PARENT_TAG
 
-MAINTAINER Trevor Joynson "<docker@trevor.joynson.io>"
+LABEL maintainer="Disqus <ops@disqus.com>"
 
 ENV DEBIAN_FRONTEND=noninteractive \
     DEBCONF_NONINTERACTIVE_SEEN=true \
