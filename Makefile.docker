@@ -24,7 +24,7 @@ all: build
 
 HOST_BIN ?= host/bin
 
-REPO_${HOST_BIN}/prefixout ?= github.com/akatrevorjay/$(notdir $@)
+REPO_${HOST_BIN}/prefixout ?= github.com/disqus/$(notdir $@)
 HOST_GOLANG_DEPS += ${HOST_BIN}/prefixout
 
 HOST_DEPS += ${HOST_GOLANG_DEPS}
